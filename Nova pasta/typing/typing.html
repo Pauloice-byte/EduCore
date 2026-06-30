@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poliglota Typing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="logo-section">
+                <div class="logo-icon">⌨</div>
+                <h1>Poliglota Typing</h1>
+            </div>
+
+            <div class="header-right">
+
+                <button id="theme-btn">
+                    🌙
+                </button>
+
+                <div class="user-level">
+                    Level 1
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+            <div class="stat-card">
+                <h3>WPM</h3>
+                <span id="wpm">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Accuracy</h3>
+                <span id="accuracy">100%</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Time</h3>
+                <span id="timer">60</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>XP</h3>
+                <span id="xp">0</span>
+            </div>
+
+        </section>
+
+        <!-- PROGRESS -->
+
+        <section class="progress-section">
+
+            <div class="progress-label">
+                Lesson Progress
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progress-fill"></div>
+
+            </div>
+
+        </section>
+
+        <!-- LESSON SELECTOR -->
+
+        <section class="lesson-selector">
+
+            <select id="lesson-select">
+
+                <option value="home-row">
+                    Home Row
+                </option>
+
+                <option value="top-row">
+                    Top Row
+                </option>
+
+                <option value="bottom-row">
+                    Bottom Row
+                </option>
+
+                <option value="words">
+                    Common Words
+                </option>
+
+                <option value="sentences">
+                    Sentences
+                </option>
+
+            </select>
+
+            <button id="restart-btn">
+                Restart Lesson
+            </button>
+
+        </section>
+
+        <!-- TYPING AREA -->
+
+        <section class="typing-container">
+
+            <div id="text-display">
+
+            </div>
+
+            <textarea
+                id="typing-input"
+                spellcheck="false"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                placeholder="Start typing here..."
+            ></textarea>
+
+        </section>
+
+        <!-- RESULTS -->
+
+        <section class="results-panel">
+
+            <div class="result-box">
+
+                <h4>Correct</h4>
+                <span id="correct-count">0</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <h4>Errors</h4>
+                <span id="error-count">0</span>
+
+            </div>
+
+            <div class="result-box">
+
+                <h4>Characters</h4>
+                <span id="char-count">0</span>
+
+            </div>
+
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+
+        <section class="achievement-section">
+
+            <h2>
+                Achievements
+            </h2>
+
+            <div id="achievement-list">
+
+                <div class="achievement locked">
+                    First Lesson
+                </div>
+
+                <div class="achievement locked">
+                    30 WPM
+                </div>
+
+                <div class="achievement locked">
+                    50 WPM
+                </div>
+
+                <div class="achievement locked">
+                    Accuracy Master
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VIRTUAL KEYBOARD -->
+
+        <section class="keyboard-section">
+
+            <div class="keyboard">
+
+                <div class="row">
+                    <div class="key">Q</div>
+                    <div class="key">W</div>
+                    <div class="key">E</div>
+                    <div class="key">R</div>
+                    <div class="key">T</div>
+                    <div class="key">Y</div>
+                    <div class="key">U</div>
+                    <div class="key">I</div>
+                    <div class="key">O</div>
+                    <div class="key">P</div>
+                </div>
+
+                <div class="row">
+                    <div class="key">A</div>
+                    <div class="key">S</div>
+                    <div class="key">D</div>
+                    <div class="key">F</div>
+                    <div class="key">G</div>
+                    <div class="key">H</div>
+                    <div class="key">J</div>
+                    <div class="key">K</div>
+                    <div class="key">L</div>
+                </div>
+
+                <div class="row">
+                    <div class="key">Z</div>
+                    <div class="key">X</div>
+                    <div class="key">C</div>
+                    <div class="key">V</div>
+                    <div class="key">B</div>
+                    <div class="key">N</div>
+                    <div class="key">M</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- HISTORY -->
+
+        <section class="history-section">
+
+            <h2>
+                Session History
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>WPM</th>
+                        <th>Accuracy</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="history-table">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <!-- ACHIEVEMENT POPUP -->
+
+    <div id="achievement-popup">
+
+        Achievement Unlocked
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

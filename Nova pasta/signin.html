@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lufrânia | Sign In</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================
+   SIGN IN PAGE
+========================= */
+
+.signin-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--bg);
+    padding:20px;
+}
+
+.signin-card{
+    width:100%;
+    max-width:420px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.signin-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.signin-title h1{
+    color:var(--green);
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.signin-title p{
+    color:var(--text);
+    font-size:0.95rem;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    color:var(--text);
+    font-size:0.9rem;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    background:#0d1411;
+    color:white;
+    outline:none;
+}
+
+.input-group input:focus{
+    border-color:var(--green);
+}
+
+.signin-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:var(--green);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signin-btn:hover{
+    background:var(--green-dark);
+}
+
+.signin-footer{
+    text-align:center;
+    margin-top:20px;
+    color:var(--text);
+    font-size:0.9rem;
+}
+
+.signin-footer a{
+    color:var(--green);
+    text-decoration:none;
+}
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:var(--text);
+    text-decoration:none;
+}
+
+.back-link:hover{
+    color:var(--green);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="signin-page">
+
+<div class="signin-card">
+
+<div class="signin-title">
+<h1>Lufrânia</h1>
+<p>Sign in to continue learning</p>
+</div>
+
+<form id="signinForm">
+
+<div class="input-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Enter your password" required>
+</div>
+
+<button class="signin-btn" type="submit">
+Sign In
+</button>
+
+</form>
+
+<div class="signin-footer">
+Don't have an account? <a href="createaccount.html">Create one</a>
+</div>
+
+<a class="back-link" href="index.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById("signinForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // TEMP FLOW (no backend yet)
+    window.location.href = "courses.html";
+});
+</script>
+
+</body>
+</html>
+

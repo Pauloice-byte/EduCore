@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lufrânia | Create Account</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================
+   CREATE ACCOUNT PAGE
+========================= */
+
+.account-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--bg);
+    padding:20px;
+}
+
+.account-card{
+    width:100%;
+    max-width:450px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.account-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.account-title h1{
+    color:var(--green);
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.account-title p{
+    color:var(--text);
+    font-size:0.95rem;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    color:var(--text);
+    font-size:0.9rem;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    background:#0d1411;
+    color:white;
+    outline:none;
+}
+
+.input-group input:focus{
+    border-color:var(--green);
+}
+
+.account-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:var(--green);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.account-btn:hover{
+    background:var(--green-dark);
+}
+
+.account-footer{
+    text-align:center;
+    margin-top:20px;
+    color:var(--text);
+    font-size:0.9rem;
+}
+
+.account-footer a{
+    color:var(--green);
+    text-decoration:none;
+}
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:var(--text);
+    text-decoration:none;
+}
+
+.back-link:hover{
+    color:var(--green);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="account-page">
+
+<div class="account-card">
+
+<div class="account-title">
+<h1>Lufrânia</h1>
+<p>Create your account to start learning</p>
+</div>
+
+<form id="accountForm">
+
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+</div>
+
+<div class="input-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Create a password" required>
+</div>
+
+<button class="account-btn" type="submit">
+Create Account
+</button>
+
+</form>
+
+<div class="account-footer">
+Already have an account? <a href="signin.html">Sign In</a>
+</div>
+
+<a class="back-link" href="index.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById("accountForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // TEMP FLOW (no backend yet)
+    window.location.href = "courses.html";
+});
+</script>
+
+</body>
+</html>
+
