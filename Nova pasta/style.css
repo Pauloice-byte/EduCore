@@ -5,15 +5,47 @@
 }
 
 :root{
+
     --green:#22c55e;
     --green-dark:#16a34a;
+
     --bg:#0a0f0d;
     --card:#101814;
     --card-light:#151f1a;
-    --text:#d1d5db;
-    --border:rgba(255,255,255,.08);
-}
 
+    --text:#d1d5db;
+    --heading:#ffffff;
+
+    --border:rgba(255,255,255,.08);
+
+    --navbar-bg:rgba(10,15,13,.9);
+    --sidebar-bg:#0d1411;
+    --hero-card-bg:linear-gradient(145deg,#111,#1a241d);
+
+}
+body.light-mode{
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --card-light:#f1f5f9;
+    --text:#475569;
+    --border:rgba(0,0,0,.08);
+}
+body.light-mode{
+
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --card-light:#f1f5f9;
+
+    --text:#475569;
+    --border:rgba(0,0,0,.08);
+
+    --heading:#111827;
+
+    --navbar-bg:rgba(255,255,255,.94);
+    --sidebar-bg:#ffffff;
+    --hero-card-bg:linear-gradient(145deg,#ffffff,#f5f7fa);
+
+}
 html{
     scroll-behavior:smooth;
 }
@@ -21,11 +53,13 @@ html{
 body{
     font-family:'Poppins',sans-serif;
     background:var(--bg);
-    color:white;
+    color:var(--text);
     overflow-x:hidden;
     min-height:100vh;
+    transition:
+        background-color .35s ease,
+        color .35s ease;
 }
-
 .container{
     width:90%;
     max-width:1200px;
