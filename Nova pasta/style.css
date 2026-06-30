@@ -140,10 +140,19 @@ body{
 }
 
 .logo{
-    color:var(--green);
-    font-size:1.9rem;
-    font-weight:800;
-    margin-left:80px;
+    color: var(--green);
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-left: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease, transform .2s ease;
+    display: inline-block;
+}
+
+.logo:hover{
+    color: #34d399;
+    transform: scale(1.03);
 }
 
 .nav-links{
@@ -278,9 +287,11 @@ body{
 }
 
 .hero-card-header{
-    font-size:1.2rem;
-    font-weight:700;
-    margin-bottom:25px;
+    color: var(--green);
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 18px;
 }
 
 .progress-item{
@@ -323,7 +334,25 @@ body{
     color:var(--green);
     margin-bottom:5px;
 }
+.hero-card-image{
+    width:100%;
+    border-radius:18px;
+    margin-bottom:25px;
+    object-fit:cover;
+}
 
+.hero-card-title{
+    color:#fff;
+    font-size:1.4rem;
+    line-height:1.4;
+    margin-bottom:18px;
+}
+
+.hero-card-text{
+    color:var(--text);
+    line-height:1.8;
+    font-size:1rem;
+}
 /* =========================
    STATS
 ========================= */
@@ -388,11 +417,13 @@ body{
 }
 
 .course-card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:35px;
-    transition:.3s;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 35px;
+    transition: .3s;
+    text-decoration: none;   /* Removes underline */
+    color: inherit;          /* Keeps normal text color */
 }
 
 .course-card:hover{
