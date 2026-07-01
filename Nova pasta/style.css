@@ -232,7 +232,7 @@ body.light-mode .background-overlay{
     color: var(--green);
     font-size: 2.3rem;
     font-weight: 800;
-    margin-left: 80px;
+    margin-left: 0px;
     text-decoration: none;
     cursor: pointer;
     transition: color .3s ease, transform .2s ease;
@@ -247,7 +247,10 @@ body.light-mode .background-overlay{
 .nav-links{
     display:flex;
     align-items:center;
+    justify-content:center;
     gap:30px;
+    flex:1;
+    transform:translateX(120px);
 }
 .nav-links a{
     display:flex;
@@ -270,13 +273,20 @@ body.light-mode .background-overlay{
 
 .nav-actions{
     display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.auth-buttons{
+    display:flex;
     gap:15px;
+    margin-left:auto;
 }
 .language-switcher{
     display:flex;
     align-items:center;
     justify-content:center;
-
+transform:translateX(40px);
     height:42px;
 }
 
@@ -778,8 +788,8 @@ footer{
 
 .theme-toggle svg{
     width:24px;
-    height:24px;
-    transform:translateX(-3px);
+    height:40px;
+    transform:translateX(200px);
 }
 /* =========================
    WHATSAPP FLOATING BUTTON
