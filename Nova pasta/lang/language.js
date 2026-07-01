@@ -23,40 +23,71 @@ if (!languages.includes(currentLanguage)) {
 const languageFlag = document.getElementById("languageFlag");
 const languageSwitcher = document.getElementById("languageSwitcher");
 
+function getTranslation(obj, path) {
+    return path.split(".").reduce((o, key) => {
+        return o ? o[key] : undefined;
+    }, obj);
+}
+
 function translatePage() {
 
     const lang = translations[currentLanguage];
 
     document.documentElement.lang = currentLanguage;
 
-    document.title = lang.pageTitle;
+    // Page title
+    const title = document.querySelector("[data-i18n-title]");
 
-    for (const id in lang) {
+    if (title) {
+        const key = title.dataset.i18nTitle;
+        const value = getTranslation(lang, key);
 
-        const element = document.getElementById(id);
-
-        if (element) {
-            element.textContent = lang[id];
+        if (value) {
+            document.title = value;
         }
     }
 
-    languageFlag.src = flags[currentLanguage];
-    languageFlag.alt = currentLanguage;
+    // Translate every element
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+
+        const key = element.dataset.i18n;
+
+        const value = getTranslation(lang, key);
+
+        if (value !== undefined) {
+            element.textContent = value;
+        } else {
+            console.warn("Missing translation:", key);
+        }
+
+    });
+
+    // Update flag
+    if (languageFlag) {
+        languageFlag.src = flags[currentLanguage];
+        languageFlag.alt = currentLanguage.toUpperCase();
+    }
 
 }
 
+// Initial translation
 translatePage();
 
-languageSwitcher.addEventListener("click", () => {
+// Click on flag
+if (languageSwitcher) {
 
-    let index = languages.indexOf(currentLanguage);
+    languageSwitcher.addEventListener("click", () => {
 
-    index = (index + 1) % languages.length;
+        let index = languages.indexOf(currentLanguage);
 
-    currentLanguage = languages[index];
+        index = (index + 1) % languages.length;
 
-    localStorage.setItem("language", currentLanguage);
+        currentLanguage = languages[index];
 
-    translatePage();
+        localStorage.setItem("language", currentLanguage);
 
-});
+        translatePage();
+
+    });
+
+}
