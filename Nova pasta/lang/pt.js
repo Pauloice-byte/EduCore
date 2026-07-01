@@ -7,7 +7,7 @@ nav: {
     courses: "Cursos",
     features: "Funcionalidades",
     reviews: "Avaliações",
-    faq: "P.F.",
+    faq: "FAQ",
     contact: "Contacto",
     pricing: "Preços",
     signin: "Iniciar Sessão",
