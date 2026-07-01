@@ -717,10 +717,19 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .nav-links,
-    .nav-actions{
-        display:none;
-    }
+ .nav-links{
+    display:none;
+}
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+}
+
+.auth-buttons{
+    display:none;
+}
 
     .hero h1{
         font-size:2.8rem;
