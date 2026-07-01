@@ -112,7 +112,7 @@ body{
 /* Light overlay */
 
 body.light-mode .background-overlay{
-    background:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.15);
 }
 
 
