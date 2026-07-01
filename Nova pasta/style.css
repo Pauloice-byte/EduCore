@@ -173,6 +173,8 @@ body.light-mode .background-overlay{
     flex-direction:column;
     gap:10px;
     padding:90px 20px 20px;
+
+    margin-top: 70px;
 }
 
 .sidebar-menu a{
@@ -208,6 +210,21 @@ body.light-mode .background-overlay{
     background:var(--green-dark);
 }
 
+/* ---------- LIGHT MODE SIDEBAR ---------- */
+
+body.light-mode .sidebar a:hover{
+
+    background:rgba(34,197,94,.15);
+    color:#16a34a;
+
+}
+
+body.light-mode .sidebar a.active{
+
+    background:rgba(34,197,94,.18);
+    color:#16a34a;
+
+}
 /* =========================
    NAVBAR
 ========================= */
