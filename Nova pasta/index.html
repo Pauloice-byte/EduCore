@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduCore | Practical Skills for the Digital World</title>
+
+<title data-i18n-title="pageTitle">
+    EduCore | Practical Skills for the Digital World
+</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,18 +16,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
 <!-- BACKGROUND SLIDESHOW -->
 <div class="background-slider">
 
-    <img src="images/bg/image1.png"alt="">
+    <img src="images/bg/image1.png" alt="">
     <img src="images/bg/image2.png" class="bg-slide" alt="">
 
 </div>
 
 <div class="background-overlay"></div>
+
 <!-- MENU BUTTON -->
 <button id="menuToggle" class="menu-toggle">☰</button>
 
@@ -31,18 +39,28 @@
 
 <nav class="sidebar-menu">
 
-<a href="#home">🏠 Home</a>
-<a href="courses.html">📚 Courses</a>
-<a href="#features">⭐ Features</a>
- <a href="#pricing">⭐ Pricing</a> 
-<a href="#faq">❓ FAQ</a>
-<a href="#contact">📞 Contact</a>
+<a href="#home" data-i18n="nav.home">🏠 Home</a>
+
+<a href="courses.html" data-i18n="nav.courses">📚 Courses</a>
+
+<a href="#features" data-i18n="nav.features">⭐ Features</a>
+
+<a href="#pricing" data-i18n="nav.pricing">⭐ Pricing</a>
+
+<a href="#faq" data-i18n="nav.faq">❓ FAQ</a>
+
+<a href="#contact" data-i18n="nav.contact">📞 Contact</a>
 
 </nav>
 
 <div class="sidebar-footer">
-<a href="signin.html" class="sidebar-btn">Register</a>
- 
+
+<a href="signin.html"
+class="sidebar-btn"
+data-i18n="nav.register">
+Register
+</a>
+
 </div>
 
 </aside>
@@ -52,38 +70,79 @@
 
 <div class="container nav-content">
 
-<a href="index.html" class="logo">EduCore</a>
+<a href="index.html" class="logo">
+EduCore
+</a>
 
 <div class="language-switcher" id="languageSwitcher">
-    <img
-        id="languageFlag"
-        src="images/flags/gb.png"
-        alt="English">
+
+<img
+id="languageFlag"
+src="images/flags/gb.png"
+alt="English">
+
 </div>
 
 <nav class="nav-links">
-<a href="courses.html">Courses</a>
-<a href="#features">Features</a>
-<a href="#reviews">Reviews</a>
-<a href="#faq">FAQ</a>
+
+<a href="courses.html"
+data-i18n="nav.courses">
+Courses
+</a>
+
+<a href="#features"
+data-i18n="nav.features">
+Features
+</a>
+
+<a href="#reviews"
+data-i18n="nav.reviews">
+Reviews
+</a>
+
+<a href="#faq"
+data-i18n="nav.faq">
+FAQ
+</a>
+
 </nav>
 
 <div class="nav-actions">
 
-<button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+<button
+id="themeToggle"
+class="theme-toggle"
+aria-label="Toggle light and dark mode">
+
 ☀️
+
 </button>
 
-<a href="signin.html" class="sidebar-btn">Sign In</a>
+<div class="auth-buttons">
 
-<a href="createaccount.html" class="btn">
+<a href="signin.html"
+class="sidebar-btn"
+data-i18n="nav.signin">
+
+Sign In
+
+</a>
+
+<a href="createaccount.html"
+class="btn"
+data-i18n="nav.createAccount">
+
 Create Account
+
 </a>
 
 </div>
 
-</header>
+</div>
 
+</div>
+
+</header>
 <!-- HERO -->
 <section class="hero" id="home">
 
@@ -91,51 +150,97 @@ Create Account
 
 <div class="hero-content">
 
-<span class="hero-badge">
+<span class="hero-badge"
+data-i18n="hero.badge">
+
 Digital Skills Training Platform
+
 </span>
 
 <h1>
+
+<span data-i18n="hero.title1">
+
 Learn Practical Skills.
-<span>Build Your Future.</span>
+
+</span>
+
+<br>
+
+<span data-i18n="hero.title2">
+
+Build Your Future.
+
+</span>
+
 </h1>
 
-<p>
-Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplace productivity skills through engaging lessons.
+<p data-i18n="hero.description">
+
+Master touch typing, Microsoft Excel,
+Microsoft Word, forex trading and workplace
+productivity skills through engaging lessons.
+
 </p>
 
 <div class="hero-buttons">
 
-<a href="createaccount.html" class="btn">Create Account</a>
-<a href="signin.html" class="sidebar-btn">Sign In</a>
-</div>
+<a href="createaccount.html"
+class="btn"
+data-i18n="nav.createAccount">
+
+Create Account
+
+</a>
+
+<a href="signin.html"
+class="sidebar-btn"
+data-i18n="nav.signin">
+
+Sign In
+
+</a>
 
 </div>
 
-
+</div>
 
 <div class="hero-card">
 
+<div class="hero-card-header logo-style">
 
-    <div class="hero-card-header logo-style">
-    EduCore
+EduCore
+
 </div>
 
-    <h3 class="hero-card-title">
-        The place where students meet their ideal trainer & Trainers meet promissing students
-    </h3>
+<h3
+class="hero-card-title"
+data-i18n="hero.cardTitle">
 
-    <p class="hero-card-text">
-        Learn from experienced professionals in Languages,
-        Forex Trading, Microsoft Office, Artificial Intelligence,
-        Touch Typing and many other practical digital skills.
-    </p>
+The place where students meet their ideal trainer &
+Trainers meet promissing students
+
+</h3>
+
+<p
+class="hero-card-text"
+data-i18n="hero.cardText">
+
+Learn from experienced professionals in Languages,
+Forex Trading, Microsoft Office,
+Artificial Intelligence,
+Touch Typing and many other practical digital skills.
+
+</p>
+
+</div>
 
 </div>
 
 </section>
 
 <!-- STATS -->
+
 <section class="stats">
 
 <div class="container">
@@ -143,23 +248,51 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 <div class="stats-grid">
 
 <div class="stat-card">
+
 <h2>200+</h2>
-<p>Active Learners</p>
+
+<p data-i18n="stats.learners">
+
+Active Learners
+
+</p>
+
 </div>
 
 <div class="stat-card">
+
 <h2>120+</h2>
-<p>Lessons</p>
+
+<p data-i18n="stats.lessons">
+
+Lessons
+
+</p>
+
 </div>
 
 <div class="stat-card">
+
 <h2>15+</h2>
-<p>Courses</p>
+
+<p data-i18n="stats.courses">
+
+Courses
+
+</p>
+
 </div>
 
 <div class="stat-card">
+
 <h2>28</h2>
-<p>Trainers</p>
+
+<p data-i18n="stats.trainers">
+
+Trainers
+
+</p>
+
 </div>
 
 </div>
@@ -169,35 +302,91 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 </section>
 
 <!-- COURSES -->
+
 <section class="courses" id="courses">
 
 <div class="container">
 
 <div class="section-title">
-<h2>Popular Courses</h2>
-<p>Choose a skill and start learning today.</p>
+
+<h2 data-i18n="courses.title">
+
+Popular Courses
+
+</h2>
+
+<p data-i18n="courses.subtitle">
+
+Choose a skill and start learning today.
+
+</p>
+
 </div>
 
 <div class="courses-grid">
 
 <a href="#" class="course-card">
-<h3>⌨️ Touch Typing</h3>
-<p>Improve speed and accuracy.</p>
+
+<h3 data-i18n="courses.typing">
+
+⌨️ Touch Typing
+
+</h3>
+
+<p data-i18n="courses.typingDesc">
+
+Improve speed and accuracy.
+
+</p>
+
 </a>
 
 <a href="#" class="course-card">
-<h3>📊 Microsoft Excel</h3>
-<p>Learn formulas and data skills.</p>
+
+<h3 data-i18n="courses.excel">
+
+📊 Microsoft Excel
+
+</h3>
+
+<p data-i18n="courses.excelDesc">
+
+Learn formulas and data skills.
+
+</p>
+
 </a>
 
 <a href="#" class="course-card">
-<h3>📄 Microsoft Word</h3>
-<p>Create professional documents.</p>
+
+<h3 data-i18n="courses.word">
+
+📄 Microsoft Word
+
+</h3>
+
+<p data-i18n="courses.wordDesc">
+
+Create professional documents.
+
+</p>
+
 </a>
 
 <a href="#" class="course-card">
-<h3>💼 Workplace Skills</h3>
-<p>Communication and productivity.</p>
+
+<h3 data-i18n="courses.workplace">
+
+💼 Workplace Skills
+
+</h3>
+
+<p data-i18n="courses.workplaceDesc">
+
+Communication and productivity.
+
+</p>
+
 </a>
 
 </div>
@@ -207,34 +396,85 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 </section>
 
 <!-- FEATURES -->
+
 <section class="features" id="features">
 
 <div class="container">
 
 <div class="section-title">
-<h2>Why Choose EduCore?</h2>
+
+<h2 data-i18n="features.title">
+
+Why Choose EduCore?
+
+</h2>
+
 </div>
 
 <div class="features-grid">
 
 <div class="feature-card">
-<h3>⌨️ Typing Practice</h3>
-<p>Improve typing speed daily.</p>
+
+<h3 data-i18n="features.typing">
+
+⌨️ Typing Practice
+
+</h3>
+
+<p data-i18n="features.typingDesc">
+
+Improve typing speed daily.
+
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>📈 Progress Tracking</h3>
-<p>Monitor your improvement.</p>
+
+<h3 data-i18n="features.tracking">
+
+📈 Progress Tracking
+
+</h3>
+
+<p data-i18n="features.trackingDesc">
+
+Monitor your improvement.
+
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>🏆 Certificates</h3>
-<p>Earn completion certificates.</p>
+
+<h3 data-i18n="features.certificates">
+
+🏆 Certificates
+
+</h3>
+
+<p data-i18n="features.certificatesDesc">
+
+Earn completion certificates.
+
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>📱 Mobile Friendly</h3>
-<p>Learn anywhere, anytime.</p>
+
+<h3 data-i18n="features.mobile">
+
+📱 Mobile Friendly
+
+</h3>
+
+<p data-i18n="features.mobileDesc">
+
+Learn anywhere, anytime.
+
+</p>
+
 </div>
 
 </div>
@@ -242,7 +482,6 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 </div>
 
 </section>
-
 <!-- CTA -->
 <section class="cta" id="contact">
 
@@ -250,14 +489,36 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 
 <div class="cta-box">
 
-<h2>Start Building Your Skills Today</h2>
+<h2 data-i18n="cta.title">
 
-<p>Join thousands of learners improving digital skills.</p>
+Start Building Your Skills Today
+
+</h2>
+
+<p data-i18n="cta.text">
+
+Join thousands of learners improving digital skills.
+
+</p>
 
 <div class="hero-buttons">
 
-<a href="createaccount.html" class="btn">Create Account</a>
-<a href="signin.html" class="sidebar-btn">Sign In</a>
+<a href="createaccount.html"
+class="btn"
+data-i18n="cta.create">
+
+Create Account
+
+</a>
+
+<a href="signin.html"
+class="sidebar-btn"
+data-i18n="cta.signin">
+
+Sign In
+
+</a>
+
 </div>
 
 </div>
@@ -267,45 +528,67 @@ Master touch typing, Microsoft Excel, Microsoft Word, forex trading and workplac
 </section>
 
 <!-- FOOTER -->
+
 <footer>
 
 <div class="container footer-content">
 
 <div>
-<h3>EduCore</h3>
-<p>Practical Skills for the Digital/Real World.</p>
+
+<h3>
+
+EduCore
+
+</h3>
+
+<p data-i18n="footer.slogan">
+
+Practical Skills for the Digital/Real World.
+
+</p>
+
 </div>
 
-<div>© 2026 Lufrânia</div>
+<div>
+
+© 2026 Lufrânia
+
+</div>
 
 </div>
 
 </footer>
 
+<!-- WHATSAPP -->
 
 <a
-    href="https://wa.me/244925525570?text=I%20would%20like%20to%20learn%20more%20about%20EduCore"
-    class="whatsapp-float"
-    target="_blank"
-    aria-label="Chat on WhatsApp">
+href="https://wa.me/244925525570?text=I%20would%20like%20to%20learn%20more%20about%20EduCore"
+class="whatsapp-float"
+target="_blank"
+aria-label="Chat on WhatsApp">
 
-    <svg xmlns="http://www.w3.org/2000/svg"
-         width="30"
-         height="30"
-         viewBox="0 0 24 24"
-         fill="currentColor">
+<svg xmlns="http://www.w3.org/2000/svg"
+width="30"
+height="30"
+viewBox="0 0 24 24"
+fill="currentColor">
 
-        <path d="M20.52 3.48A11.86 11.86 0 0012.03 0C5.41 0 .03 5.38.03 12c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.62A11.94 11.94 0 0012.03 24C18.65 24 24 18.62 24 12a11.9 11.9 0 00-3.48-8.52zM12.03 21.8c-1.82 0-3.6-.49-5.16-1.41l-.37-.22-3.68.96.98-3.59-.24-.37A9.73 9.73 0 012.23 12c0-5.41 4.4-9.81 9.8-9.81s9.8 4.4 9.8 9.81-4.39 9.8-9.8 9.8zm5.38-7.34c-.29-.14-1.71-.84-1.98-.94-.26-.1-.46-.14-.65.15-.19.29-.75.94-.91 1.13-.17.19-.33.22-.62.07-.29-.14-1.21-.44-2.31-1.4-.85-.76-1.43-1.69-1.6-1.98-.17-.29-.02-.45.13-.6.14-.14.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.57-.89-2.15-.24-.57-.48-.5-.65-.5h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.99 2.43 0 1.43 1.02 2.81 1.17 3 .14.19 2 3.05 4.84 4.28.68.29 1.21.46 1.63.59.68.22 1.3.19 1.79.12.55-.08 1.71-.7 1.95-1.38.24-.67.24-1.24.17-1.38-.07-.14-.26-.22-.55-.36z"/>
-    </svg>
+<path d="M20.52 3.48A11.86 11.86 0 0012.03 0C5.41 0 .03 5.38.03 12c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.62A11.94 11.94 0 0012.03 24C18.65 24 24 18.62 24 12a11.9 11.9 0 00-3.48-8.52zM12.03 21.8c-1.82 0-3.6-.49-5.16-1.41l-.37-.22-3.68.96.98-3.59-.24-.37A9.73 9.73 0 012.23 12c0-5.41 4.4-9.81 9.8-9.81s9.8 4.4 9.8 9.81-4.39 9.8-9.8 9.8zm5.38-7.34c-.29-.14-1.71-.84-1.98-.94-.26-.1-.46-.14-.65.15-.19.29-.75.94-.91 1.13-.17.19-.33.22-.62.07-.29-.14-1.21-.44-2.31-1.4-.85-.76-1.43-1.69-1.6-1.98-.17-.29-.02-.45.13-.6.14-.14.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.57-.89-2.15-.24-.57-.48-.5-.65-.5h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.99 2.43 0 1.43 1.02 2.81 1.17 3 .14.19 2 3.05 4.84 4.28.68.29 1.21.46 1.63.59.68.22 1.3.19 1.79.12.55-.08 1.71-.7 1.95-1.38.24-.67.24-1.24.17-1.38-.07-.14-.26-.22-.55-.36z"/>
+
+</svg>
 
 </a>
+
 <!-- LANGUAGE FILES -->
+
 <script src="lang/en.js"></script>
 <script src="lang/pt.js"></script>
 <script src="lang/fr.js"></script>
 <script src="lang/language.js"></script>
 
 <!-- MAIN SCRIPT -->
+
 <script src="script.js"></script>
+
 </body>
 </html>
